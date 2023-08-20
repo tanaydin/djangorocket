@@ -1,11 +1,9 @@
 {% raw %}
     {% extends "base_settings.html" %}
-    {% load
 {% endraw -%}
-{{ cookiecutter.project_slug }}{%- raw -%}_utils_math %}
-{% load
+{% load {{ cookiecutter.project_slug }}{%- raw -%}_utils_math %}
 {% endraw -%}
-{{ cookiecutter.project_slug }}{%- raw -%}_utils_timestamp %}
+{% load {{ cookiecutter.project_slug }}{%- raw -%}_utils_timestamp %}
 {% block head %}
     <title>Billing and plans -
     {% endraw -%}
